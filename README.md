@@ -1,1 +1,1 @@
-# url-shortening
+https://shortening-urls.netlify.app/
