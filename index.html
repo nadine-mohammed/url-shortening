@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Url shortening</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="./assets/images/favicon-32x32.png" rel="icon" />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="shortenUrlPage">
+      <!-- mainData -->
+      <div class="mainData">
+        <div class="top-menu">
+          <div class="left-side">
+            <div class="row left-side-details">
+              <div class="col-4 middle">
+                <img src="./assets/images/logo.svg" />
+              </div>
+              <div class="col-8 middle left-side-txt">
+                <div class="row">
+                  <div class="col middle item-hover">Pricing</div>
+                  <div class="col middle item-hover">Features</div>
+                  <div class="col middle item-hover">Resources</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="menu-and-ico">
+              <span class="material-icons menu-ico" id="menu-ico"> menu </span>
+              <div class="menu-options" id="menu-options">
+                <div class="options">
+                  <div class="option">Features</div>
+                  <div class="option">Pricing</div>
+                  <div class="option">Resources</div>
+                  <div class="menu-line-mob"></div>
+                  <div class="option">login</div>
+                  <div class="signupBtn">Signup</div>
+                </div>
+              </div>
+            </div>
+            <div class="row right-side-details">
+              <div class="col middle item-hover">Login</div>
+              <button type="button" class="col signupBtn item-hover">
+                Signup
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="get-started row">
+          <div class="col-7 txtCont">
+            <div class="title">More than just shorter links</div>
+            <div class="description">
+              Build your brand’s recognition and get detailed insights on how
+              your links are performing.
+            </div>
+            <button type="button" class="col getstartedBtn">Get Started</button>
+          </div>
+          <div class="col-5 workingImgCont">
+            <img
+              src="./assets/images/illustration-working.svg"
+              class="workingImgUrl"
+            />
+          </div>
+        </div>
+        <!-- link card -->
+        <div class="card linkCont text-center">
+          <div class="linkContBody linkContBody-mobile row">
+            <div class="col-9 linkInput">
+              <input
+                type="text"
+                id="inp"
+                class="form-control inp"
+                placeholder="Shorten a link here.."
+              />
+              <div class="error" id="error">Please add your link</div>
+            </div>
+            <div class="col-3 shortnBtnCont">
+              <div class="shortenBtn" id="shortenBtn">Shorten it!</div>
+            </div>
+          </div>
+        </div>
+        <!-- link card end -->
+      </div>
+      <!-- mainData -->
+      <!-- advancedCont -->
+      <div class="advancedCont">
+        <!-- suggested links -->
+        <div class="allSuggestCont" id="allSuggestCont">
+          <div class="allSuggest" id="allSuggest"></div>
+        </div>
+        <!-- suggested links end -->
+        <!--  -->
+        <div class="advanced-txt">
+          <div class="advanced-title">Advanced Statistics</div>
+          <div class="advanced-description">
+            Track how your links are performing across the web with our advanced
+            statistics dashboard
+          </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="advanced-cards">
+          <div class="card col-3 custom-card">
+            <div class="custom-card-logo">
+              <img
+                src="./assets/images/icon-brand-recognition.svg"
+                class="custom-card-logo-url"
+              />
+            </div>
+            <div class="card-body custom-card-body">
+              <h5 class="card-title">Brand Recognition</h5>
+              <p class="card-text">
+                Boost your brand recognition with each click. Generic links
+                don’t mean a thing. Branded links help instil confidence in your
+                content.
+              </p>
+            </div>
+          </div>
+          <div class="connect-line col-1"></div>
+          <div class="card col-3 custom-card">
+            <div class="custom-card-logo">
+              <img
+                src="./assets/images/icon-detailed-records.svg"
+                class="custom-card-logo-url"
+              />
+            </div>
+            <div class="card-body custom-card-body">
+              <h5 class="card-title">Detailed Records</h5>
+              <p class="card-text">
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+          </div>
+          <div class="connect-line col-1"></div>
+          <div class="card col-3 custom-card">
+            <div class="custom-card-logo">
+              <img
+                src="./assets/images/icon-fully-customizable.svg"
+                class="custom-card-logo-url"
+              />
+            </div>
+            <div class="card-body custom-card-body">
+              <h5 class="card-title">Fully Customizable</h5>
+              <p class="card-text">
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <!-- advancedCont end -->
+      <!-- boost cont -->
+      <div class="boost-cont">
+        <div class="boost-info">
+          <div class="boost-title">Boost your links today</div>
+          <button type="button" class="col getstartedBtn">Get Started</button>
+        </div>
+      </div>
+      <!-- boost cont end  -->
+      <!-- footer -->
+      <div class="footer-cont">
+        <div class="footer-details">
+          <div class="col-2 details">
+            <div>
+              <img src="./assets/images/logo-white.svg" />
+            </div>
+          </div>
+          <div class="col-2 details">
+            <div class="details-more-txt-cont">
+              <div class="details-more-txt-title">Features</div>
+              <div class="details-more-txt">Link Shortening</div>
+              <div class="details-more-txt">Branded Links</div>
+              <div class="details-more-txt">Analytics</div>
+            </div>
+          </div>
+          <div class="col-2 details">
+            <div class="details-more-txt-cont">
+              <div class="details-more-txt-title">Resources</div>
+              <div class="details-more-txt">Blog</div>
+              <div class="details-more-txt">Developers</div>
+              <div class="details-more-txt">Support</div>
+            </div>
+          </div>
+          <div class="col-2 details">
+            <div class="details-more-txt-cont">
+              <div class="details-more-txt-title">Company</div>
+              <div class="details-more-txt">About</div>
+              <div class="details-more-txt">Our Team</div>
+              <div class="details-more-txt">Careers</div>
+              <div class="details-more-txt">Contact</div>
+            </div>
+          </div>
+          <div class="col-2 details icons-cont">
+            <div>
+              <img class="footer-ico" src="./assets/images/icon-facebook.svg" />
+              <img class="footer-ico" src="./assets/images/icon-twitter.svg" />
+              <img
+                class="footer-ico"
+                src="./assets/images/icon-pinterest.svg"
+              />
+              <img src="./assets/images/icon-instagram.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer end -->
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
